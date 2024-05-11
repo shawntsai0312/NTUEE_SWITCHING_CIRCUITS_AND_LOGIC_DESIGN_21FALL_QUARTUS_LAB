@@ -1,0 +1,333 @@
+Analysis & Synthesis report for WSC
+Sat Jan 15 06:46:56 2022
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jan 15 06:46:56 2022      ;
+; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; WSC                                        ;
+; Top-level Entity Name              ; WSC                                        ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 15                                         ;
+;     Total combinational functions  ; 14                                         ;
+;     Dedicated logic registers      ; 10                                         ;
+; Total registers                    ; 10                                         ;
+; Total pins                         ; 9                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; WSC                ; WSC                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++-------------------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                        ; Library ;
++-------------------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; //VBOXSVR/Lab2/Lab2/Lab2_3/fulladder1.bdf ; yes             ; User Block Diagram/Schematic File        ; //VBOXSVR/Lab2/Lab2/Lab2_3/fulladder1.bdf                           ;         ;
+; //VBOXSVR/Lab2/Lab2/Lab2_3/SD011.bdf      ; yes             ; User Block Diagram/Schematic File        ; //VBOXSVR/Lab2/Lab2/Lab2_3/SD011.bdf                                ;         ;
+; //VBOXSVR/Lab2/Lab2/Lab2_3/SD101.bdf      ; yes             ; User Block Diagram/Schematic File        ; //VBOXSVR/Lab2/Lab2/Lab2_3/SD101.bdf                                ;         ;
+; //VBOXSVR/Lab2/Lab2/Lab2_3/FSM.bdf        ; yes             ; User Block Diagram/Schematic File        ; //VBOXSVR/Lab2/Lab2/Lab2_3/FSM.bdf                                  ;         ;
+; //VBOXSVR/Lab2/Lab2/Lab2_3/WSC.bdf        ; yes             ; User Block Diagram/Schematic File        ; //VBOXSVR/Lab2/Lab2/Lab2_3/WSC.bdf                                  ;         ;
+; and_2.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/and_2.bdf ;         ;
+; dff_1.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/dff_1.bdf ;         ;
+; and_3.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/and_3.bdf ;         ;
+; not_1.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/not_1.bdf ;         ;
+; or_2.bdf                                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/or_2.bdf  ;         ;
+; mux_2.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/mux_2.bdf ;         ;
+; gnd_1.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/gnd_1.bdf ;         ;
+; xor_2.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; //vboxsvr/lab2/lab2/lab2_3/ntuee_logicdesign_lib/elements/xor_2.bdf ;         ;
++-------------------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 15        ;
+;                                             ;           ;
+; Total combinational functions               ; 14        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 7         ;
+;     -- 3 input functions                    ; 5         ;
+;     -- <=2 input functions                  ; 2         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 14        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 10        ;
+;     -- Dedicated logic registers            ; 10        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 9         ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 10        ;
+; Total fan-out                               ; 91        ;
+; Average fan-out                             ; 2.17      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; |WSC                       ; 14 (0)            ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |WSC                               ; work         ;
+;    |DFF_1:inst13|          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|DFF_1:inst13                  ; work         ;
+;    |DFF_1:inst6|           ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|DFF_1:inst6                   ; work         ;
+;    |DFF_1:inst9|           ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|DFF_1:inst9                   ; work         ;
+;    |DFF_1:inst|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|DFF_1:inst                    ; work         ;
+;    |FSM:inst16|            ; 3 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16                    ; work         ;
+;       |DFF_1:inst1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16|DFF_1:inst1        ; work         ;
+;       |DFF_1:inst|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16|DFF_1:inst         ; work         ;
+;       |and_2:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16|and_2:inst2        ; work         ;
+;       |and_3:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16|and_3:inst4        ; work         ;
+;       |or_2:inst5|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|FSM:inst16|or_2:inst5         ; work         ;
+;    |SD011:inst3|           ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD011:inst3                   ; work         ;
+;       |DFF_1:inst1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD011:inst3|DFF_1:inst1       ; work         ;
+;       |DFF_1:inst|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD011:inst3|DFF_1:inst        ; work         ;
+;       |and_2:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD011:inst3|and_2:inst2       ; work         ;
+;       |or_2:inst5|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD011:inst3|or_2:inst5        ; work         ;
+;    |SD101:inst1|           ; 1 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD101:inst1                   ; work         ;
+;       |DFF_1:inst1|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD101:inst1|DFF_1:inst1       ; work         ;
+;       |DFF_1:inst|         ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD101:inst1|DFF_1:inst        ; work         ;
+;       |or_2:inst8|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|SD101:inst1|or_2:inst8        ; work         ;
+;    |fulladder1:inst11|     ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|fulladder1:inst11             ; work         ;
+;       |or_2:inst5|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|fulladder1:inst11|or_2:inst5  ; work         ;
+;       |xor_2:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|fulladder1:inst11|xor_2:inst2 ; work         ;
+;    |fulladder1:inst15|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|fulladder1:inst15             ; work         ;
+;       |xor_2:inst|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|fulladder1:inst15|xor_2:inst  ; work         ;
+;    |mux_2:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|mux_2:inst10                  ; work         ;
+;    |mux_2:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|mux_2:inst12                  ; work         ;
+;    |mux_2:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|mux_2:inst4                   ; work         ;
+;    |mux_2:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WSC|mux_2:inst7                   ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++---------------------------------------+------------------------------------------+
+; Register name                         ; Reason for Removal                       ;
++---------------------------------------+------------------------------------------+
+; SD101:inst2|DFF_1:inst|inst           ; Merged with SD101:inst1|DFF_1:inst|inst  ;
+; SD101:inst2|DFF_1:inst1|inst          ; Merged with SD101:inst1|DFF_1:inst1|inst ;
+; Total Number of Removed Registers = 2 ;                                          ;
++---------------------------------------+------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 10    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Jan 15 06:46:48 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WSC -c WSC
+Info (20029): Only one processor detected - disabling parallel compilation
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder1.bdf
+    Info (12023): Found entity 1: fulladder1
+Info (12021): Found 1 design units, including 1 entities, in source file sd011.bdf
+    Info (12023): Found entity 1: SD011
+Info (12021): Found 1 design units, including 1 entities, in source file sd101.bdf
+    Info (12023): Found entity 1: SD101
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.bdf
+    Info (12023): Found entity 1: FSM
+Info (12021): Found 1 design units, including 1 entities, in source file wsc.bdf
+    Info (12023): Found entity 1: WSC
+Info (12127): Elaborating entity "WSC" for the top level hierarchy
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:inst16"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/and_2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: and_2
+Info (12128): Elaborating entity "and_2" for hierarchy "FSM:inst16|and_2:inst2"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/dff_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DFF_1
+Info (12128): Elaborating entity "DFF_1" for hierarchy "FSM:inst16|DFF_1:inst"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/and_3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: and_3
+Info (12128): Elaborating entity "and_3" for hierarchy "FSM:inst16|and_3:inst4"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/not_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: not_1
+Info (12128): Elaborating entity "not_1" for hierarchy "FSM:inst16|not_1:inst6"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/or_2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: or_2
+Info (12128): Elaborating entity "or_2" for hierarchy "FSM:inst16|or_2:inst5"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/mux_2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux_2
+Info (12128): Elaborating entity "mux_2" for hierarchy "mux_2:inst4"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/gnd_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: gnd_1
+Info (12128): Elaborating entity "gnd_1" for hierarchy "gnd_1:inst18"
+Info (12128): Elaborating entity "fulladder1" for hierarchy "fulladder1:inst5"
+Warning (12125): Using design file ntuee_logicdesign_lib/elements/xor_2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: xor_2
+Info (12128): Elaborating entity "xor_2" for hierarchy "fulladder1:inst5|xor_2:inst2"
+Info (12128): Elaborating entity "SD101" for hierarchy "SD101:inst1"
+Info (12128): Elaborating entity "SD011" for hierarchy "SD011:inst3"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 371 megabytes
+    Info: Processing ended: Sat Jan 15 06:46:56 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:05
+
+

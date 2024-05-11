@@ -1,0 +1,69 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 160 160)
+	(text "FSM" (rect 5 0 27 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 48 96)
+		(input)
+		(text "X" (rect 40 45 54 53)(font "Arial" (font_size 8))(vertical))
+		(text "X" (rect 32 72 46 80)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 96)(pt 48 80))
+	)
+	(port
+		(pt 24 96)
+		(input)
+		(text "clk" (rect 16 45 30 60)(font "Arial" (font_size 8))(vertical))
+		(text "clk" (rect 8 64 22 79)(font "Arial" (font_size 8))(vertical))
+		(line (pt 24 96)(pt 24 80))
+	)
+	(port
+		(pt 72 96)
+		(input)
+		(text "rst_n" (rect 64 45 78 74)(font "Arial" (font_size 8))(vertical))
+		(text "rst_n" (rect 64 48 78 77)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 96)(pt 72 80))
+	)
+	(port
+		(pt 48 0)
+		(output)
+		(text "Z" (rect 40 24 54 32)(font "Arial" (font_size 8))(vertical))
+		(text "Z" (rect 40 24 54 32)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 0)(pt 48 16))
+	)
+	(drawing
+		(line (pt 24 32)(pt 32 32))
+		(line (pt 24 48)(pt 32 48))
+		(line (pt 40 32)(pt 48 32))
+		(line (pt 40 32)(pt 40 48))
+		(line (pt 40 48)(pt 48 48))
+		(line (pt 48 48)(pt 48 64))
+		(line (pt 40 64)(pt 48 64))
+		(line (pt 24 32)(pt 24 64))
+		(line (pt 56 32)(pt 56 64))
+		(line (pt 56 32)(pt 64 64))
+		(line (pt 64 64)(pt 72 32))
+		(line (pt 72 32)(pt 72 64))
+		(rectangle (rect 16 16 80 80))
+	)
+)

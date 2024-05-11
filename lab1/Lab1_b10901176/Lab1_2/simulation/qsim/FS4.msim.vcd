@@ -1,0 +1,183 @@
+$comment
+	File created using the following command:
+		vcd file FS4.msim.vcd -direction
+$end
+$date
+	Sun Nov 21 17:25:39 2021
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module FS4_vlg_vec_tst $end
+$var reg 4 ! A [3:0] $end
+$var reg 4 " B [3:0] $end
+$var wire 1 # D [4] $end
+$var wire 1 $ D [3] $end
+$var wire 1 % D [2] $end
+$var wire 1 & D [1] $end
+$var wire 1 ' D [0] $end
+$var wire 1 ( sampler $end
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / D[4]~output_o $end
+$var wire 1 0 D[3]~output_o $end
+$var wire 1 1 D[2]~output_o $end
+$var wire 1 2 D[1]~output_o $end
+$var wire 1 3 D[0]~output_o $end
+$var wire 1 4 B[3]~input_o $end
+$var wire 1 5 A[3]~input_o $end
+$var wire 1 6 A[2]~input_o $end
+$var wire 1 7 B[2]~input_o $end
+$var wire 1 8 A[0]~input_o $end
+$var wire 1 9 A[1]~input_o $end
+$var wire 1 : B[0]~input_o $end
+$var wire 1 ; B[1]~input_o $end
+$var wire 1 < inst3|inst8|inst~combout $end
+$var wire 1 = inst2|inst8|inst~combout $end
+$var wire 1 > inst|inst8|inst~combout $end
+$var wire 1 ? inst|inst1|inst~combout $end
+$var wire 1 @ inst2|inst1|inst~combout $end
+$var wire 1 A inst3|inst1|inst~combout $end
+$var wire 1 B inst4|inst|inst~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 !
+b111 "
+0'
+0&
+0%
+1$
+0#
+x(
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+10
+01
+02
+03
+04
+15
+16
+17
+18
+19
+1:
+1;
+0<
+0=
+0>
+1?
+0@
+0A
+0B
+$end
+#80000
+b111 !
+b11 !
+b101 "
+b100 "
+0:
+0;
+06
+05
+0(
+1=
+1B
+1A
+1@
+0?
+13
+12
+11
+00
+1'
+1&
+1%
+0$
+1?
+1>
+10
+1/
+1$
+1#
+#160000
+b1 !
+b1001 !
+b110 "
+1;
+09
+15
+1(
+1<
+0?
+0>
+00
+0/
+0$
+0#
+0@
+01
+0%
+#240000
+b1110 "
+b1111 "
+b1 !
+05
+1:
+14
+0(
+1>
+0B
+1/
+03
+1#
+0'
+#320000
+b0 !
+b1011 "
+b1001 "
+b1 "
+b0 "
+0:
+0;
+07
+04
+08
+1(
+0<
+0A
+1@
+1?
+0=
+02
+11
+10
+0&
+1%
+1$
+0@
+01
+0%
+0?
+0>
+00
+0/
+0$
+0#
+#1000000

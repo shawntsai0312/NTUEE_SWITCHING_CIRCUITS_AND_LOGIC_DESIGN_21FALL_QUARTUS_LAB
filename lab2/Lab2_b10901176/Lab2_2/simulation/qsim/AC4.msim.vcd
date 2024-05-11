@@ -1,0 +1,695 @@
+$comment
+	File created using the following command:
+		vcd file AC4.msim.vcd -direction
+$end
+$date
+	Sat Jan 15 07:08:31 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module AC4_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " load $end
+$var reg 1 # rst_n $end
+$var reg 4 $ x_i [3:0] $end
+$var wire 1 % done $end
+$var wire 1 & sum_0 [3] $end
+$var wire 1 ' sum_0 [2] $end
+$var wire 1 ( sum_0 [1] $end
+$var wire 1 ) sum_0 [0] $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 done~output_o $end
+$var wire 1 2 sum_0[3]~output_o $end
+$var wire 1 3 sum_0[2]~output_o $end
+$var wire 1 4 sum_0[1]~output_o $end
+$var wire 1 5 sum_0[0]~output_o $end
+$var wire 1 6 clk~input_o $end
+$var wire 1 7 clk~inputclkctrl_outclk $end
+$var wire 1 8 load~input_o $end
+$var wire 1 9 inst3|inst3|inst~0_combout $end
+$var wire 1 : rst_n~input_o $end
+$var wire 1 ; rst_n~inputclkctrl_outclk $end
+$var wire 1 < inst3|inst9|inst~q $end
+$var wire 1 = inst3|inst2|inst~combout $end
+$var wire 1 > inst3|inst8|inst~q $end
+$var wire 1 ? inst3|inst4|inst~0_combout $end
+$var wire 1 @ inst3|inst10|inst~q $end
+$var wire 1 A inst3|inst14|inst~combout $end
+$var wire 1 B x_i[3]~input_o $end
+$var wire 1 C x_i[2]~input_o $end
+$var wire 1 D x_i[0]~input_o $end
+$var wire 1 E x_i[1]~input_o $end
+$var wire 1 F inst|inst3|inst3~0_combout $end
+$var wire 1 G inst4|inst3|inst~q $end
+$var wire 1 H inst1|inst2|inst2|inst~0_combout $end
+$var wire 1 I inst|inst2|inst3~0_combout $end
+$var wire 1 J inst4|inst2|inst~q $end
+$var wire 1 K inst1|inst2|inst5|inst~0_combout $end
+$var wire 1 L inst|inst1|inst3~0_combout $end
+$var wire 1 M inst4|inst1|inst~q $end
+$var wire 1 N inst|inst|inst3~0_combout $end
+$var wire 1 O inst|inst|inst3~1_combout $end
+$var wire 1 P inst4|inst|inst~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 $
+0%
+0)
+0(
+0'
+0&
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+$end
+#20000
+1!
+16
+17
+0*
+#40000
+0!
+06
+07
+1*
+#60000
+1!
+16
+17
+0*
+#80000
+1#
+1"
+b1 $
+0!
+1:
+18
+1D
+06
+1;
+07
+1*
+1F
+0?
+09
+#100000
+1!
+16
+17
+0*
+1G
+1H
+15
+1)
+#120000
+b11 $
+0"
+b10 $
+0!
+0D
+1E
+08
+06
+07
+1*
+1I
+1?
+19
+#140000
+1!
+16
+17
+0*
+1@
+1<
+1J
+0?
+1K
+0H
+14
+1(
+1L
+0I
+#160000
+b11 $
+0!
+1D
+06
+07
+1*
+1H
+0F
+1I
+#180000
+1!
+16
+17
+0*
+0@
+1M
+0G
+1?
+09
+1N
+0L
+0H
+1F
+13
+05
+1'
+0)
+1O
+0I
+#200000
+b111 $
+b101 $
+b100 $
+0!
+0D
+0E
+1C
+06
+07
+1*
+0K
+1H
+0F
+1L
+0L
+1I
+#220000
+1!
+16
+17
+0*
+1@
+0<
+1P
+0M
+0?
+1=
+0O
+0N
+1L
+12
+03
+1&
+0'
+1A
+1O
+11
+1%
+#240000
+b0 $
+0!
+0C
+06
+07
+1*
+0L
+#260000
+1!
+16
+17
+0*
+0@
+1>
+1?
+19
+0A
+01
+0%
+#280000
+0!
+06
+07
+1*
+#300000
+1!
+16
+17
+0*
+1@
+1<
+0?
+#320000
+0!
+06
+07
+1*
+#340000
+1!
+16
+17
+0*
+0@
+09
+#360000
+0!
+06
+07
+1*
+#380000
+1!
+16
+17
+0*
+0<
+1?
+19
+#400000
+1"
+b10 $
+b11 $
+b111 $
+0!
+18
+1D
+1E
+1C
+06
+07
+1*
+0O
+1L
+1F
+0?
+0=
+09
+1K
+0H
+1N
+#420000
+1!
+16
+17
+0*
+0>
+0P
+1M
+1G
+1H
+02
+13
+15
+0&
+1'
+1)
+#440000
+0"
+b101 $
+b1 $
+0!
+08
+0E
+0C
+06
+07
+1*
+1O
+0L
+0F
+1?
+19
+0H
+0I
+#460000
+1!
+16
+17
+0*
+1@
+1<
+1P
+0M
+0J
+0G
+0?
+0O
+0N
+1L
+0K
+1F
+12
+03
+04
+05
+1&
+0'
+0(
+0)
+1O
+0L
+#480000
+b101 $
+0!
+1C
+06
+07
+1*
+1L
+#500000
+1!
+16
+17
+0*
+0@
+1M
+1G
+1?
+09
+1N
+0L
+1H
+0F
+13
+15
+1'
+1)
+0O
+1I
+#520000
+b100 $
+b110 $
+b10 $
+0!
+0D
+1E
+0C
+06
+07
+1*
+1F
+0N
+1L
+1O
+#540000
+1!
+16
+17
+0*
+1@
+0<
+1J
+0?
+1=
+1K
+0H
+14
+1(
+1A
+1N
+0L
+0I
+11
+1%
+0O
+#560000
+b0 $
+0!
+0E
+06
+07
+1*
+0K
+1H
+0N
+1L
+1I
+1O
+#580000
+1!
+16
+17
+0*
+0@
+1>
+1?
+19
+0A
+01
+0%
+#600000
+0!
+06
+07
+1*
+#620000
+1!
+16
+17
+0*
+1@
+1<
+0?
+#640000
+1"
+b1 $
+b11 $
+0!
+18
+1D
+1E
+06
+07
+1*
+0O
+0L
+0=
+09
+1K
+1N
+#660000
+1!
+16
+17
+0*
+0@
+0>
+0<
+0P
+0M
+0N
+02
+03
+0&
+0'
+#680000
+b1011 $
+0"
+b1001 $
+0!
+0E
+1B
+08
+06
+07
+1*
+0H
+1O
+1L
+0F
+1?
+19
+0I
+#700000
+1!
+16
+17
+0*
+1@
+1<
+1P
+1M
+0J
+0G
+0?
+0O
+1N
+0L
+0K
+1F
+12
+13
+04
+05
+1&
+1'
+0(
+0)
+1O
+0N
+1L
+0O
+#720000
+b1000 $
+b0 $
+0!
+0D
+0B
+06
+07
+1*
+0F
+1O
+#740000
+1!
+16
+17
+0*
+0@
+1?
+09
+#760000
+b1 $
+0!
+1D
+06
+07
+1*
+1F
+#780000
+1!
+16
+17
+0*
+1@
+0<
+1G
+0?
+1=
+1H
+0F
+15
+1)
+1A
+1I
+11
+1%
+#800000
+b0 $
+0!
+0D
+06
+07
+1*
+0H
+1F
+0I
+#820000
+1!
+16
+17
+0*
+0@
+1>
+1?
+19
+0A
+01
+0%
+#840000
+0!
+06
+07
+1*
+#860000
+1!
+16
+17
+0*
+1@
+1<
+0?
+#880000
+0!
+06
+07
+1*
+#900000
+1!
+16
+17
+0*
+0@
+09
+#920000
+0!
+06
+07
+1*
+#940000
+1!
+16
+17
+0*
+0<
+1?
+19
+#960000
+0!
+06
+07
+1*
+#980000
+1!
+16
+17
+0*
+1@
+1<
+0?
+#1000000

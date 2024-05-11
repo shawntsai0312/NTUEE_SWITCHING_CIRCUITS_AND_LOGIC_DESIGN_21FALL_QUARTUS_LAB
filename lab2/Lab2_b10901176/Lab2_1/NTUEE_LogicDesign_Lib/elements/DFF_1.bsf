@@ -1,0 +1,76 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 160 160)
+	(text "DFF_1" (rect 5 0 39 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLK" (rect 32 56 55 70)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 32 56 55 70)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "D" (rect 32 24 40 38)(font "Arial" (font_size 8)))
+		(text "D" (rect 24 32 32 46)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 24 32))
+	)
+	(port
+		(pt 48 0)
+		(input)
+		(text "PreN" (rect 40 16 54 43)(font "Arial" (font_size 8))(vertical))
+		(text "PreN" (rect 48 1 62 28)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 0)(pt 48 8))
+	)
+	(port
+		(pt 48 96)
+		(input)
+		(text "ClrN" (rect 40 53 54 76)(font "Arial" (font_size 8))(vertical))
+		(text "ClrN" (rect 48 72 62 95)(font "Arial" (font_size 8))(vertical))
+		(line (pt 48 96)(pt 48 88))
+	)
+	(port
+		(pt 96 64)
+		(output)
+		(text "QN" (rect 37 56 54 70)(font "Arial" (font_size 8)))
+		(text "QN" (rect 72 64 89 78)(font "Arial" (font_size 8)))
+		(line (pt 96 64)(pt 72 64))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "Q" (rect 37 24 46 38)(font "Arial" (font_size 8)))
+		(text "Q" (rect 64 32 73 46)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 72 32))
+	)
+	(drawing
+		(line (pt 24 72)(pt 32 64))
+		(line (pt 24 56)(pt 32 64))
+		(rectangle (rect 24 24 72 72))
+		(circle (rect 40 8 56 24))
+		(circle (rect 40 72 56 88))
+	)
+)

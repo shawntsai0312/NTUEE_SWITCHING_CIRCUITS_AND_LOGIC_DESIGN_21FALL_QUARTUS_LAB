@@ -1,0 +1,97 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 648 248)
+	(text "DataReg" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 288 184)
+		(input)
+		(text "D[3..0]" (rect 280 133 294 169)(font "Arial" (font_size 8))(vertical))
+		(text "D[3..0]" (rect 296 144 310 180)(font "Arial" (font_size 8))(vertical))
+		(line (pt 288 184)(pt 288 168))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rst_n" (rect 24 56 53 70)(font "Arial" (font_size 8)))
+		(text "rst_n" (rect 1 32 30 46)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "clk" (rect 24 136 39 150)(font "Arial" (font_size 8)))
+		(text "clk" (rect 1 120 16 134)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 288 0)
+		(output)
+		(text "Q[3..0]" (rect 280 24 294 61)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 296 1 310 38)(font "Arial" (font_size 8))(vertical))
+		(line (pt 288 0)(pt 288 16))
+	)
+	(drawing
+		(text "Q[3..0]" (rect 296 1 310 38)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 296 1 310 38)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 296 1 310 38)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 295 0 309 37)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 295 1 309 38)(font "Arial" (font_size 8))(vertical))
+		(line (pt 56 64)(pt 88 64))
+		(line (pt 56 64)(pt 56 120))
+		(line (pt 56 96)(pt 88 96))
+		(line (pt 104 64)(pt 136 64))
+		(line (pt 104 64)(pt 104 120))
+		(line (pt 104 96)(pt 136 96))
+		(line (pt 176 64)(pt 208 64))
+		(line (pt 176 64)(pt 176 120))
+		(line (pt 176 96)(pt 208 96))
+		(line (pt 224 64)(pt 256 64))
+		(line (pt 224 64)(pt 224 120))
+		(line (pt 224 96)(pt 256 96))
+		(line (pt 312 64)(pt 344 64))
+		(line (pt 312 64)(pt 312 120))
+		(line (pt 312 96)(pt 344 96))
+		(line (pt 360 64)(pt 360 120))
+		(line (pt 360 96)(pt 392 96))
+		(line (pt 448 64)(pt 480 64))
+		(line (pt 448 64)(pt 448 120))
+		(line (pt 448 96)(pt 480 96))
+		(line (pt 488 64)(pt 520 64))
+		(line (pt 488 64)(pt 488 120))
+		(line (pt 488 96)(pt 520 96))
+		(line (pt 312 64)(pt 344 64))
+		(line (pt 312 64)(pt 312 120))
+		(line (pt 360 64)(pt 392 64))
+		(line (pt 312 64)(pt 344 64))
+		(line (pt 16 160)(pt 40 144))
+		(line (pt 40 144)(pt 16 128))
+		(line (pt 16 128)(pt 16 160))
+		(rectangle (rect 16 16 568 168))
+		(rectangle (rect 40 32 152 152))
+		(rectangle (rect 160 32 280 152))
+		(rectangle (rect 296 32 408 152))
+		(rectangle (rect 424 32 544 152))
+		(circle (rect 16 48 40 72))
+	)
+)
